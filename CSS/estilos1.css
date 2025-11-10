@@ -1,0 +1,35 @@
+
+body {
+    font-family: Verdana;
+    font-size: 12px;
+    color: black;
+    margin: 20px;
+    background-color: #DFF5FD;
+}
+
+
+h1 {
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: bold;
+    color: darkblue;
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+    margin: 20px auto;
+}
+
+
+#recuadro {
+    background-color: #F5A9A9;
+    font-size: 14px;
+    color: #74030A;
+    font-family: Arial, Times, sans-serif;
+    border: solid 3px;
+    padding: 10px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px black;
+}
