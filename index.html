@@ -2,25 +2,152 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Página principal del sitio web Ejercicio 4">
-    <meta name="author" content="Tu nombre">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Github</title>
+    <title>Mi Portafolio y Centro de Aprendizaje Personal</title>
+    <!-- Carga de Tailwind CSS para un diseño base moderno y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/estilos1.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <h1>Página Github</h1>
+
+    <!-- Menú de Navegación Fijo -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-14">
+                <a href="#inicio" class="text-xl font-bold text-gray-800 hover:text-blue-600">Mi Hub Personal</a>
+                <nav class="space-x-4 flex">
+                    <a href="#trabajos" class="text-gray-600 hover:text-blue-600 font-medium transition duration-150 p-2 rounded-md">Trabajos</a>
+                    <a href="#ejercicios" class="text-gray-600 hover:text-blue-600 font-medium transition duration-150 p-2 rounded-md">Ejercicios</a>
+                    <a href="#recursos" class="text-gray-600 hover:text-blue-600 font-medium transition duration-150 p-2 rounded-md">Recursos</a>
+                </nav>
+            </div>
+        </div>
     </header>
 
-     <div id="recuadro">
-        <ul>
-            <li><a href="secundaria.html">Sobre mí</a></li>
-            <li><a href="./FicherosP3/" target="_blank">Documento</a></li>
-            <li><a href="https://www.google.com" target="_blank">Google</a></li>
-        </ul>
-    </div>
+    <!-- Contenedor Principal -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+
+        <!-- 1. Sección de Inicio/Perfil -->
+        <div id="inicio" class="section-anchor"></div>
+        <section class="bg-blue-50 p-8 sm:p-12 rounded-2xl mb-12 border-4 border-blue-200">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-8">
+                <img src="https://placehold.co/120x120/3b82f6/ffffff?text=Yo" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/120x120/3b82f6/ffffff?text=Yo';" 
+                     alt="Foto de Perfil" 
+                     class="w-32 h-32 rounded-full object-cover border-4 border-white shadow-xl">
+                <div>
+                    <h1 class="text-4xl font-extrabold text-blue-800 mb-2">Hola, ¡bienvenido/a a mi central!</h1>
+                    <p class="text-xl text-gray-700">Aquí organizo todos mis proyectos, tareas de estudio y materiales de referencia. ¡Explora!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Sección de Trabajos y Proyectos Finales -->
+        <div id="trabajos" class="section-anchor"></div>
+        <section class="mb-12">
+            <h2 class="section-title text-3xl font-bold text-gray-800">Trabajos y Proyectos</h2>
+            <p class="text-gray-600 mb-6">Proyectos completos, trabajos de mayor envergadura o productos terminados que he desarrollado.</p>
+
+            <!-- Contenedor de Trabajos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- INICIO DEL BLOQUE DE TRABAJO (COPIAR PARA AÑADIR NUEVO) -->
+                <a href="ruta/a/mi-primer-trabajo.pdf" target="_blank" class="content-item flex items-center space-x-4">
+                    <!-- Icono (Puedes usar un Emoji, como se muestra en la explicación) -->
+                    <span class="text-4xl">💻</span>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold text-gray-900">Proyecto Web "App de Notas"</h3>
+                        <p class="text-sm text-gray-500 mt-1">
+                            <span class="font-medium text-blue-600">Tecnología:</span> HTML, JS y Firestore. | Finalizado en Enero 2025.
+                        </p>
+                    </div>
+                </a>
+                <!-- FIN DEL BLOQUE DE TRABAJO -->
+                
+                <!-- Bloque de Trabajo 2 -->
+                <a href="ruta/a/presentacion-final.pptx" target="_blank" class="content-item flex items-center space-x-4">
+                    <span class="text-4xl">📈</span>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold text-gray-900">Análisis de Datos Financieros</h3>
+                        <p class="text-sm text-gray-500 mt-1">
+                            <span class="font-medium text-blue-600">Tipo:</span> Presentación de Power Point (Descarga). | Finalizado en Marzo 2025.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Bloque de Trabajo 3 (Para que copies) -->
+                <div class="content-item border-dashed border-2 border-gray-300 flex items-center justify-center p-6 text-center text-gray-500">
+                    <p>Copia y pega un bloque anterior para añadir tu siguiente trabajo.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. Sección de Ejercicios y Prácticas -->
+        <div id="ejercicios" class="section-anchor"></div>
+        <section class="mb-12">
+            <h2 class="section-title text-3xl font-bold text-gray-800">Ejercicios y Prácticas</h2>
+            <p class="text-gray-600 mb-6">Soluciones a problemas, tareas cortas y prácticas de aprendizaje.</p>
+
+            <!-- Contenedor de Ejercicios -->
+            <div class="space-y-4">
+                
+                <!-- INICIO DEL BLOQUE DE EJERCICIO (COPIAR PARA AÑADIR NUEVO) -->
+                <a href="ruta/a/ejercicio-1.py" target="_blank" class="content-item flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-3xl text-green-600">✅</span>
+                        <div>
+                            <p class="font-semibold text-gray-800">Ejercicio de Python: Ordenamiento de Listas</p>
+                            <p class="text-xs text-gray-500">Práctica de Algoritmos (Ver código fuente)</p>
+                        </div>
+                    </div>
+                    <span class="text-sm text-blue-600 font-medium">Ver Archivo</span>
+                </a>
+                <!-- FIN DEL BLOQUE DE EJERCICIO -->
+
+                <!-- Bloque de Ejercicio 2 -->
+                <a href="ruta/a/tarea-historia.doc" target="_blank" class="content-item flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-3xl text-yellow-600">📚</span>
+                        <div>
+                            <p class="font-semibold text-gray-800">Tarea de Historia: Resumen de la Revolución Francesa</p>
+                            <p class="text-xs text-gray-500">Documento Word (Descarga)</p>
+                        </div>
+                    </div>
+                    <span class="text-sm text-blue-600 font-medium">Descargar</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- 4. Sección de Recursos Personales (Enlaces) -->
+        <div id="recursos" class="section-anchor"></div>
+        <section class="mb-12">
+            <h2 class="section-title text-3xl font-bold text-gray-800">Recursos y Enlaces Personales</h2>
+            <p class="text-gray-600 mb-6">Otros enlaces o archivos que me son útiles.</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <a href="https://ejemplo.com/recurso" target="_blank" class="content-item text-center bg-gray-100 hover:bg-gray-200">
+                    <p class="font-semibold text-blue-700">⭐ Enlace a mi Tutorial Favorito</p>
+                    <p class="text-xs text-gray-500 truncate">ejemplo.com/recurso-externo</p>
+                </a>
+                
+                <a href="ruta/a/plantilla-excel.xlsx" target="_blank" class="content-item text-center bg-gray-100 hover:bg-gray-200">
+                    <p class="font-semibold text-green-700">📄 Plantilla Excel de Finanzas</p>
+                    <p class="text-xs text-gray-500">Archivo Excel para descargar</p>
+                </a>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-800 text-white p-6 text-center mt-8">
+        <p class="text-sm">&copy; 2025 Tu Nombre. Centro de Contenido.</p>
+    </footer>
 
 </body>
 </html>
